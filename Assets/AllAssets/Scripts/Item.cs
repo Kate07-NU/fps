@@ -7,8 +7,6 @@ public class Item
     // アイテムの種類を列挙する
     public enum Type
     {
-        Cube,
-        Ball,
         Key,
         Apple,
         RemoteController,
