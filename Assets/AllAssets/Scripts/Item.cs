@@ -8,7 +8,6 @@ public class Item
     public enum Type
     {
         Key,
-        Apple,
         RemoteController,
         IceKey,
         Memo,

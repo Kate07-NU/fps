@@ -13,18 +13,15 @@ MonoBehaviour:
   m_Name: ItemListEntity
   m_EditorClassIdentifier: 
   itemList:
-  - type: 2
+  - type: 0
     sprite: {fileID: 21300000, guid: 0b14ab2b9638a4c94a6f18b48884a998, type: 3}
     zoomPrefab: {fileID: 3371387094845840399, guid: 20d1afd5dec104a41a75ed64310d9227, type: 3}
-  - type: 4
+  - type: 1
     sprite: {fileID: 21300000, guid: aa09711facfc94a8dbc7f94a97e860db, type: 3}
     zoomPrefab: {fileID: 3880243073925478766, guid: b1d346ab1ceab41038ffe1d6c747178a, type: 3}
-  - type: 5
+  - type: 2
     sprite: {fileID: 21300000, guid: 7b3ca27f4ad2742cd8d146800eeb5ebc, type: 3}
     zoomPrefab: {fileID: 3776751861911843026, guid: 63512297cb7f54a748b1d029a6f9b0eb, type: 3}
-  - type: 6
+  - type: 3
     sprite: {fileID: 21300000, guid: 70160daf49e5a4d69938fbd12bd2e83f, type: 3}
     zoomPrefab: {fileID: 535774565503068715, guid: d463731780f4e4e40aa7c216ecf175e3, type: 3}
-  - type: 0
-    sprite: {fileID: 0}
-    zoomPrefab: {fileID: 0}

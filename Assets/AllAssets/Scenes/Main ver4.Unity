@@ -32764,6 +32764,107 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.051217854, y: 2.9831276, z: 0.73704463}
   m_Center: {x: 0.014186233, y: 1.5089006, z: 0.35714224}
+--- !u!1 &1906961981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1906961984}
+  - component: {fileID: 1906961982}
+  - component: {fileID: 1906961983}
+  - component: {fileID: 1906961985}
+  m_Layer: 0
+  m_Name: SubCamera(ButtonPanel)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!20 &1906961982
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906961981}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &1906961983
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906961981}
+  m_Enabled: 1
+--- !u!4 &1906961984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906961981}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -10.24, y: -0.16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5109737895713764000}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1906961985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906961981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &1913270687
 GameObject:
   m_ObjectHideFlags: 0
@@ -33807,6 +33908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subTVCamera: {fileID: 403997993}
   subChestCamera: {fileID: 1669558341}
+  subPanelCamera: {fileID: 1906961982}
   mainCamera: {fileID: 37163366}
   backPanel: {fileID: 1977248036}
 --- !u!1 &1980686779
@@ -33952,7 +34054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78a380ebf7ce4cfc9d78d5309c2f7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 5
+  itemType: 2
 --- !u!114 &2003847091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109530,6 +109632,7 @@ Transform:
   - {fileID: 5109737895613173925}
   - {fileID: 5109737895539895944}
   - {fileID: 5109737896118175513}
+  - {fileID: 1906961984}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -109608,6 +109711,8 @@ GameObject:
   - component: {fileID: 5109737895713764001}
   - component: {fileID: 5109737895713764002}
   - component: {fileID: 5109737895713764003}
+  - component: {fileID: 5109737895713764005}
+  - component: {fileID: 5109737895713764006}
   m_Layer: 0
   m_Name: ButtonPanel(6selection)
   m_TagString: Untagged
@@ -109615,6 +109720,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5109737895713764005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5109737895713764004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0566fb8db1c2449f895ce7de4116ff4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subCamera: {fileID: 1906961982}
+  mainCamera: {fileID: 37163366}
+  backPanel: {fileID: 1977248036}
+--- !u!114 &5109737895713764006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5109737895713764004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5109737895713764005}
+          m_TargetAssemblyTypeName: CameraZoomSetter, Assembly-CSharp
+          m_MethodName: OnClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &5109737896039649890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110777,7 +110926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78a380ebf7ce4cfc9d78d5309c2f7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 6
+  itemType: 3
 --- !u!65 &6447399281718966405
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -111221,7 +111370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78a380ebf7ce4cfc9d78d5309c2f7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 4
+  itemType: 1
 --- !u!65 &7639479095429254053
 BoxCollider:
   m_ObjectHideFlags: 0
