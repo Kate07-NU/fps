@@ -4,8 +4,19 @@ using UnityEngine;
 
 public class BoxColloder : MonoBehaviour
 {
-    public void OnClick()
+    [SerializeField] Camera subCamera = default;
+    BoxCollider boxCollider;
+    void Start()
     {
-        GetComponent<BoxCollider>().enabled = false;
+        boxCollider = GetComponent<BoxCollider>();
+    }
+
+    void Update()
+    {
+        if (subCamera.gameObject.activeSelf == true) {
+            boxCollider.enabled = false;
+        } else {
+            boxCollider.enabled = true;
+        }
     }
 }

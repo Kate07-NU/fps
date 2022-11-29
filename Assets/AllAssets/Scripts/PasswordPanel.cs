@@ -9,19 +9,26 @@ public class PasswordPanel : MonoBehaviour
     [SerializeField] DialNumber[] dialNumbers = default;
     [SerializeField] GameObject leftDoor = default;
     [SerializeField] GameObject rightDoor = default;
+    [SerializeField] Camera subPasswordCamera = default;
+    [SerializeField] Camera subOpenCamera = default;
+    [SerializeField] GameObject backPanel = default;
 
     Animation animL = default;
     Animation animR = default; 
     public void Start()
     {
         animL = leftDoor.GetComponent<Animation>();       
-        animR = rightDoor.GetComponent<Animation>();       
+        animR = rightDoor.GetComponent<Animation>();    
+        subOpenCamera.gameObject.SetActive(false);   
     }
     // パスワードとユーザの入力を確かめる
     public void OnClickButton()
     {
         if (CheckClear()) {
             // ドアを開ける
+            backPanel.SetActive(false);
+            subPasswordCamera.gameObject.SetActive(false);
+            subOpenCamera.gameObject.SetActive(true);
             animL.Play();
             animR.Play();
         }

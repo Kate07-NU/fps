@@ -5,22 +5,30 @@ using UnityEngine;
 public class BlueMan : MonoBehaviour
 {
    Animator animB;
+   // Animation anim;
    public bool buttonflag1;
    public bool buttonflag2;
    public bool buttonflag3;
    public bool buttonflag4;
    public bool buttonflag5;
    public bool buttonflag6;
+   [SerializeField] Camera subOpenCamera = default;
+   [SerializeField] Camera subPanelCamera = default;
+   [SerializeField] GameObject backPanel = default;
+
+   bool isSlide = false; // スライドしたかどうかを示す変数
 
    public void Start()
     {
         animB = GetComponent<Animator>(); 
+        // anim = GetComponent<Animation>();
         buttonflag1 = false;
         buttonflag2 = false;
         buttonflag3 = false;
         buttonflag4 = false;
         buttonflag5 = false;
         buttonflag6 = false;
+        subOpenCamera.gameObject.SetActive(false);
     }
 
     public void flag1t()
@@ -92,7 +100,14 @@ public class BlueMan : MonoBehaviour
                     if(buttonflag4 == true){
                         if(buttonflag5 == false){
                             if(buttonflag6 == true){
-                                animB.SetBool("banim", true);
+                                if (isSlide == false) { // 一回のみSlideする
+                                    isSlide = true;
+                                    backPanel.SetActive(false);
+                                    subPanelCamera.gameObject.SetActive(false);
+                                    subOpenCamera.gameObject.SetActive(true);
+                                    animB.SetBool("banim", true);
+                                }
+                                return;        
                             }
                         }
                     }
