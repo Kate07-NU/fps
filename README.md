@@ -6,6 +6,8 @@
 
 TV・Chest・Sofa・PasswordPanelのZoom機能
 
+Animation時，別視点カメラに移行し，Animationの様子を見るギミック
+
 
 Asset/AllAsset/scrips/Main_ver4.unity　←　更新
 
