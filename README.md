@@ -1,7 +1,9 @@
 <<脱出ゲーム>>
 
 ＜新制作ギミック＞
+
 タイトル・メイン・クリアシーンの遷移(演出)
+
 TV・Chest・Sofa・PasswordPanelのZoom機能
 
 
