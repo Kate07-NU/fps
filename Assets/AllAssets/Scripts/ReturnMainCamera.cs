@@ -7,6 +7,7 @@ public class ReturnMainCamera : MonoBehaviour
     [SerializeField] Camera subTVCamera = default;
     [SerializeField] Camera subChestCamera = default;
     [SerializeField] Camera subPanelCamera = default;
+    [SerializeField] Camera subSofaCamera = default;
     [SerializeField] Camera mainCamera = default;
     [SerializeField] GameObject backPanel = default;
 
@@ -23,6 +24,10 @@ public class ReturnMainCamera : MonoBehaviour
             backPanel.SetActive(false);
         } else if (subPanelCamera.gameObject.activeSelf == true) {
             subPanelCamera.gameObject.SetActive(false);
+            mainCamera.gameObject.SetActive(true);
+            backPanel.SetActive(false);
+        } else if (subSofaCamera.gameObject.activeSelf == true) {
+            subSofaCamera.gameObject.SetActive(false);
             mainCamera.gameObject.SetActive(true);
             backPanel.SetActive(false);
         }
