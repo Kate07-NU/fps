@@ -14,7 +14,6 @@ public class PickupObj : MonoBehaviour
     }
     
     //クリックしたらオブジェクトを消し，ZoomPanelを表示する
-    // スロットの場所がわかれば良い
     public void OnClickObj()
     {
         ItemBox.instance.SetItem(item);

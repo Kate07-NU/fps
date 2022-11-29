@@ -110999,6 +110999,7 @@ GameObject:
   - component: {fileID: 6447399281718966405}
   - component: {fileID: 6447399281718966404}
   - component: {fileID: 6447399281718966403}
+  - component: {fileID: 6447399281718966406}
   m_Layer: 2
   m_Name: Memo
   m_TagString: Untagged
@@ -111061,6 +111062,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 6447399281718966406}
+          m_TargetAssemblyTypeName: AppearIceKey, Assembly-CSharp
+          m_MethodName: OnClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &6447399281718966404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111087,6 +111100,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 7, z: 0.84000003}
   m_Center: {x: 1.5, y: -3, z: 0.00000002980233}
+--- !u!114 &6447399281718966406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6446055616040486508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66094c266dd84f9084bfba2ff98dc58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iceKey: {fileID: 2003847088}
 --- !u!4 &6489348189036974007
 Transform:
   m_ObjectHideFlags: 0

@@ -18,6 +18,8 @@ public class RenderCamera : MonoBehaviour
     {
         if (mainCamera.gameObject.activeSelf == false) {
             canvas.worldCamera = subSofaCamera;
+        } else {
+            canvas.worldCamera = mainCamera;
         }
     }
 }
