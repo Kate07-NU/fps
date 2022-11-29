@@ -1,5 +1,9 @@
 <<脱出ゲーム>>
 
+*****新制作ギミック*****
+タイトル・メイン・クリアシーンの遷移(演出)
+TV・Chest・Sofa・PasswordPanelのZoom機能
+
 Asset/AllAsset/scrips/Main_ver4.unity　←　更新
 
 ----------現段階で制作完了ギミック----------
