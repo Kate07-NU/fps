@@ -1,7 +1,7 @@
 <<脱出ゲーム>>
-
-
 Asset/AllAsset/scrips/Main_ver4.unity　←　更新
+
+
 **新制作ギミック**
 
 タイトル・メイン・クリアシーンの遷移(演出)
