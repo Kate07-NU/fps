@@ -100,7 +100,7 @@ public class BlueMan : MonoBehaviour
                     if(buttonflag4 == true){
                         if(buttonflag5 == false){
                             if(buttonflag6 == true){
-                                if (isSlide == false) { // 一回のみSlideする
+                                if (isSlide == false) { // 一回のみLowManをSlideする
                                     isSlide = true;
                                     backPanel.SetActive(false);
                                     subPanelCamera.gameObject.SetActive(false);
