@@ -1,6 +1,8 @@
 <<脱出ゲーム>>
+Asset/AllAsset/scrips/Main_ver4.unity　←　更新
 
-*****新制作ギミック*****
+
+**新制作ギミック**
 
 タイトル・メイン・クリアシーンの遷移(演出)
 
@@ -8,10 +10,7 @@ TV・Chest・Sofa・PasswordPanelのZoom機能
 
 Animation時，別視点カメラに移行し，Animationの様子を見るギミック
 
-
-Asset/AllAsset/scrips/Main_ver4.unity　←　更新
-
-----------現段階で制作完了ギミック----------
+**現段階で制作完了ギミック**
 
 ・アイテムのリモコンを選択した上で，TVクリックで謎表示
 
@@ -22,7 +21,7 @@ Asset/AllAsset/scrips/Main_ver4.unity　←　更新
 ・パスワード機能の実装
 
 ・簡素なタイトル・クリアシーンを制作(演出あり)
-
+  
 ・TV/ChestのZoom機能の実装
 
 ・LowManのアニメーションの実装
