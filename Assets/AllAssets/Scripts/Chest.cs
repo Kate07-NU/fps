@@ -7,17 +7,20 @@ public class Chest : MonoBehaviour
     // 鍵を選択の上，クリックされたら宝箱を開ける
 
     [SerializeField] Animation anim = default;
+    [SerializeField] GameObject tile = default;
 
     void Start()
     {
-        // 最初は宝のアイテムを非表示にする
+        // 宝のアイテムを非表示にする
+        tile.SetActive(false);
     }
 
     public void Open()
     {
         if (ItemBox.instance.CheckSelectItem(Item.Type.Key)) {
             anim.Play();
-            // ここで宝のアイテムを表示する
+            // 宝のアイテムを表示する
+            tile.SetActive(true);
             ItemBox.instance.UseSelectItem();
         }
     }

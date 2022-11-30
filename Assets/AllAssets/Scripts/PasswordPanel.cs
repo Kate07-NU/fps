@@ -5,7 +5,7 @@ using UnityEngine;
 public class PasswordPanel : MonoBehaviour
 {
     // パスワード
-    int[] correctAnswer = {0, 4, 2, 2};
+    int[] correctAnswer = {0, 4, 3, 2};
     [SerializeField] DialNumber[] dialNumbers = default;
     [SerializeField] GameObject leftDoor = default;
     [SerializeField] GameObject rightDoor = default;

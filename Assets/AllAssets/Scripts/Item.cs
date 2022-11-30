@@ -11,6 +11,7 @@ public class Item
         RemoteController,
         IceKey,
         Memo,
+        Tile,
     }
 
     public Type type; // 種類

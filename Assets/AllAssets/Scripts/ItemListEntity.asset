@@ -25,3 +25,6 @@ MonoBehaviour:
   - type: 3
     sprite: {fileID: 21300000, guid: 70160daf49e5a4d69938fbd12bd2e83f, type: 3}
     zoomPrefab: {fileID: 535774565503068715, guid: d463731780f4e4e40aa7c216ecf175e3, type: 3}
+  - type: 4
+    sprite: {fileID: 21300000, guid: 681a03ba41a5841b68fab713faa2eff3, type: 3}
+    zoomPrefab: {fileID: 3719568911651427271, guid: 535ec4015ac1b4f23ab791bb508caaf8, type: 3}

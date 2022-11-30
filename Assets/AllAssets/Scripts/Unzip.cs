@@ -15,6 +15,8 @@ public class Unzip : MonoBehaviour
             foreach (Slot slot in slots) {
                 if (slot.IsEmpty()) {
                     slot.SetItem(item);
+                    ZoomPanel.instance.OnClickZoom();
+                    ItemBox.instance.selectSlot = slot;
                     break;
                 }
             }
