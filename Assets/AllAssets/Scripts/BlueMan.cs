@@ -5,13 +5,15 @@ using UnityEngine;
 public class BlueMan : MonoBehaviour
 {
    Animator animB;
-   // Animation anim;
+   Animation left, right;
    public bool buttonflag1;
    public bool buttonflag2;
    public bool buttonflag3;
    public bool buttonflag4;
    public bool buttonflag5;
    public bool buttonflag6;
+   [SerializeField] GameObject leftDoor = default;
+   [SerializeField] GameObject rightDoor = default;
    [SerializeField] Camera subOpenCamera = default;
    [SerializeField] Camera subPanelCamera = default;
    [SerializeField] GameObject backPanel = default;
@@ -21,7 +23,8 @@ public class BlueMan : MonoBehaviour
    public void Start()
     {
         animB = GetComponent<Animator>(); 
-        // anim = GetComponent<Animation>();
+        left = leftDoor.GetComponent<Animation>();
+        right = rightDoor.GetComponent<Animation>();
         buttonflag1 = false;
         buttonflag2 = false;
         buttonflag3 = false;
@@ -106,6 +109,8 @@ public class BlueMan : MonoBehaviour
                                     subPanelCamera.gameObject.SetActive(false);
                                     subOpenCamera.gameObject.SetActive(true);
                                     animB.SetBool("banim", true);
+                                    left.Play();
+                                    right.Play();
                                 }
                                 return;        
                             }
